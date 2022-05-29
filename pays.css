@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+.accueil_bg{
+    background: url("medias/accueil.png") no-repeat 50%;
+    background-size: cover;
+    height: 500px;
+}
+
+.logo img{
+    width: 9.5%;
+    height: 9.5%;
+    padding: 12px 0 0 150px;
+}
+
+.logo img:hover{
+    transform: scale(1.15);
+    transition: 0.7s linear;
+}
+
+
+#premiertrait{
+    width: 4px;
+    height: 30%;
+    margin: -13.8% 38.5%;
+    background-color:rgb(2, 31, 61);
+}
+
+
+#deuxiemetrait{
+    width: 4px;
+    height: 30%;
+    margin: -13.8% 59%;
+    background-color:rgb(2, 31, 61);
+}
+
+
+nav{
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(236, 240, 241);
+}
+
+nav > ul{
+    margin: -108px 0;
+    padding-left: 410px;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+    font-size: 1.8em;
+}
+
+
+nav > ul > li > a{
+    padding: 25px 80px;
+    color: rgb(2, 31, 61);
+}
+
+nav > ul > li:hover a{
+    padding: 20px 80px 20px 80px;
+}
+
+
+nav li{
+    list-style-type: none;
+}
+
+.submenu{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.submenu li a{
+    padding: 20px 80px;
+    font-size: 0.6em;
+    color: rgb(2, 31, 61);
+}
+
+.menu:hover{
+    border-top: 5px solid red;
+    background-color: rgb(227, 233, 235);
+}
+
+.menu .submenu{
+    background-color:rgba(236, 240, 241);
+}
+
+.submenu li:hover a{
+    color: red;
+}
+
+.menu .submenu li:hover{
+    background-color: rgb(227, 233, 235);
+}
+
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    margin: 0;
+    height: 18%;
+    background: rgb(227, 233, 235);
+}
+
+.social ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: -35px 0;
+    padding: 0;
+    display: flex;
+}
+
+.social ul li {
+    list-style: none;
+    margin: 0 50px;    /* espacement rs*/
+}
+
+.social ul li .fa {
+    color: black;
+    font-size: 35px;
+    line-height: 65px;
+    transition: .5s;
+}
+
+.social ul li .fa:hover {
+    color: white;
+}
+
+.social ul li a {
+    position: relative;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+
+
+
+.footer-bottom{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom p{
+    position: absolute;
+    bottom: 30px;
+    left: 905px;
+    margin: 0;
+    padding: 0;
+    color: rgb(2, 31, 61);
+    font-size: 17px;
+    word-spacing: 4px;
+}
+
+
+
